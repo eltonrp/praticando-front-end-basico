@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./app.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="bg-blue-500 h-16 p-4 flex items-center justify-between">
+      <a href="#" class="font-sans text-2xl text-white font-semibold">Hello World</a>
+      <ul class="flex md:text-2xl gap-3 text-white [@media(max-width:768px)]:hidden">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <button class="flex flex-col space-y-1 p-2 border-2 rounded-md border-white hover:border-blue-300 duration-300 nav-button [&_>_span]:hover:bg-blue-300 [&_>_span]:duration-300 md:hidden">
+        <span class="bg-white w-7 h-1 rounded-full"></span>
+        <span class="bg-white w-7 h-1 rounded-full"></span>
+        <span class="bg-white w-7 h-1 rounded-full"></span>
+      </button>
+    </nav>
+  </header>
+</body>
+</html>
