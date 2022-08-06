@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./app.css" rel="stylesheet">
+  <link href="./final.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -17,12 +17,22 @@
         <li>About</li>
         <li>Contact</li>
       </ul>
-      <button class="flex flex-col space-y-1 p-2 border-2 rounded-md border-white hover:border-blue-300 duration-300 nav-button [&_>_span]:hover:bg-blue-300 [&_>_span]:duration-300 md:hidden">
+      <button onclick="changeMobileMenu()" class="flex flex-col space-y-1 p-2 border-2 rounded-md border-white hover:border-blue-300 duration-300 nav-button [&_>_span]:hover:bg-blue-300 [&_>_span]:duration-300 md:hidden">
         <span class="bg-white w-7 h-1 rounded-full"></span>
         <span class="bg-white w-7 h-1 rounded-full"></span>
         <span class="bg-white w-7 h-1 rounded-full"></span>
       </button>
     </nav>
+    <div>
+      <ul class="mobile-menu bg-blue-500 md:text-2xl text-xl text-white px-4 [&_>_li]:py-2 md:hidden hidden">
+        <hr>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
   </header>
+  <script src="./app.js"></script>
 </body>
 </html>
